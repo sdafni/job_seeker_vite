@@ -1,7 +1,25 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import './index.css'
-import App from './Options'
+//import './index.css'
+import AddJob from '../components/AddJob';
+import Frame, { FrameContextConsumer }from 'react-frame-component';
+
+
+
+import { ChakraProvider, Box, SimpleGrid, HStack, VStack, GridItem, Grid, Container, Heading, Text, Flex, Button, Stack } from '@chakra-ui/react'
+import {
+  Table,
+  Thead,
+  Tbody,
+  Tfoot,
+  Tr,
+  Th,
+  Td,
+  TableCaption,
+  TableContainer,
+} from '@chakra-ui/react'
+
+
 
 const body = document.querySelector('body')
 
@@ -22,4 +40,17 @@ if (body) {
 const container = document.getElementById('react-root');
 const root = createRoot(container);
 
-root.render(<App />)
+
+
+root.render(
+
+  <ChakraProvider>
+
+  <Box  bg='tomato' w='100%' p={10} m={ 40} color='white'>
+  This is the Box
+  </Box>
+    </ChakraProvider>
+
+)
+
+

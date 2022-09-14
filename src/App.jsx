@@ -1,4 +1,3 @@
-///<reference types="chrome"/>
 
 import { ChakraProvider, Box, SimpleGrid, HStack, VStack, GridItem, Grid, Container, Heading, Text, Flex, Button, Stack } from '@chakra-ui/react'
 import {
@@ -85,6 +84,7 @@ function App() {
   }
 
 
+
   return (
     <ChakraProvider>
       <Container
@@ -93,6 +93,7 @@ function App() {
         maxH="100%"
         maxW="100%"
       >
+
         <Grid
           templateAreas={`"header header"
                           "nav main"
@@ -175,10 +176,15 @@ function App() {
             Footer
           </GridItem>
         </Grid>
+
+
+
       </Container>
 
     </ChakraProvider>
   )
+
+
 }
 
 export default App;
