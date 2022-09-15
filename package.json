@@ -1,7 +1,8 @@
 {
-  "name": "my-crx",
+  "name": "job_seeker",
   "version": "0.0.0",
   "author": "yuval",
+  "homepage": "https://gitname.github.io/job_seeker",
   "description": "",
   "type": "module",
   "license": "MIT",
@@ -18,7 +19,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "fmt": "prettier --write '**/*.{jsx,js,json,css,scss,md}'"
+    "fmt": "prettier --write '**/*.{jsx,js,json,css,scss,md}'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.9",
@@ -29,13 +32,15 @@
     "formik": "^2.2.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-frame-component": "^5.2.3"
+    "react-frame-component": "^5.2.3",
+    "react-router-dom": "^6.4.0"
   },
   "devDependencies": {
     "@crxjs/vite-plugin": "^1.0.12",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
     "@vitejs/plugin-react": "^1.3.2",
+    "gh-pages": "^4.0.0",
     "prettier": "^2.7.1",
     "vite": "^2.9.13"
   }
