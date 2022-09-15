@@ -1,1 +1,0 @@
-var t=document.createElement("iframe");t.id="myFrame";t.setAttribute("src","http://localhost:3000/content_script");t.style.width="640px";t.style.height="480px";t.style.zIndex="99999999999";t.style.border="1px";t.style.position="fixed";t.style.bottom="0";t.style.right="0";t.style.marginLeft="100px";t.style.marginRight="3px";t.style.marginBottom="17px";document.body.appendChild(t);
