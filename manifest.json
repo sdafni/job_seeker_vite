@@ -21,7 +21,7 @@
   "content_scripts": [
     {
       "js": [
-        "assets/content-script-loader.chunk-98640af9.a0761f09.js"
+        "assets/content-script-loader.chunk-ed9c6f89.23512a28.js"
       ],
       "matches": [
         "https://*.linkedin.com/jobs/*"
@@ -44,8 +44,7 @@
         "https://*.linkedin.com/*"
       ],
       "resources": [
-        "assets/chunk-ad2f102d.js",
-        "assets/chunk-98640af9.js"
+        "assets/chunk-ed9c6f89.js"
       ],
       "use_dynamic_url": true
     }
